@@ -1,0 +1,64 @@
+.table{
+    background-color: yellow;
+    border-style: dotted;
+
+
+}
+.form_for_clients{
+    background-color: blue;
+    border-style: dotted;
+}
+.form_for_phones{
+    background-color: blue;
+    border-style: dotted;
+}
+.clients{
+    color: mediumvioletred;
+    text-align: center;
+    font-size: 25px;
+
+}
+.phones{
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+
+
+}
+
+.table1{
+    background-color: yellow;
+    border-style: dotted;
+}
+td, th{
+    background-color: white;
+    border: 1px solid rgb(190,190,190);
+    padding: 1px 2px;
+    width:130px;
+}
+html {
+    font-family: sans-serif;
+}
+#sub{
+    width:130px;
+    padding: 1px 2px;
+    margin: 1px 2px;
+}
+#gend{
+    width:165px;
+    padding: 1px 2px;
+    margin: 1px 2px;
+}
+body{
+    width:260px;
+    padding: 1px 2px;
+    margin: 1px 2px;
+}
+input{
+    width:130px;
+    padding: 1px 2px;
+
+}
+
+
+

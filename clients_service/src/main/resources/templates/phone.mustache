@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body_phones">
+<a href="/main">Clients</a>
+<h1 class="phones"> Phones </h1>
+    <div >
+
+        <div class="table">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Phone</th>
+                </tr>
+                {{#phones}}
+                    <tr>
+                        <td>{{id}}</td>
+                        <td>{{phone}}</td>
+                    </tr>
+                {{/phones}}
+            </table>
+        </div>
+
+        <div class="form_for_entity">
+            <form method="post" action="add_phone">
+                <input class="input-form" type="text" placeholder="number" name="phone">
+                <input class="input-form" type="submit" value="ADD">
+            </form>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+
+.form_for_entity{
+    background-color: blue;
+    border-style: dotted;
+}
+
+.clients{
+    color: mediumvioletred;
+    text-align: center;
+    font-size: 25px;
+
+}
+.phones{
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+
+
+}
+
+.table{
+    background-color: yellow;
+    border-style: dotted;
+}
+
+td, th{
+    background-color: white;
+    border: 3px solid rgb(190,190,190);
+    padding: 1px 2px;
+    width:130px;
+}
+html {
+    font-family: sans-serif;
+}
+
+
+.body_clients{
+    align-self: center;
+    width:1130px;
+    padding: 1px 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.body_phones{
+    align-self: center;
+    width:280px;
+    padding: 1px 2px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-form{
+    width:130px;
+}
+
+
+

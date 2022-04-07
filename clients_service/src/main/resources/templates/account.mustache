@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body class="body_clients">
+
+<a href="/phones">PHONES</a>
+
+<h1 class="clients"> Clients </h1>
+<div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Amount</th>
+            </tr>
+            {{#accounts}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{amount}}</td>
+                </tr>
+            {{/accounts}}
+        </table>
+    </div>
+    <div class="form_for_entity">
+        <form method="post" action="add_account">
+            <input class = "input-form" type="text" placeholder="id" name="id">
+            <input class = "input-form" type="text" placeholder="amount" name="amount">
+            <input class = "input-form" type="submit" id="sub" value="ADD">
+        </form>
+    </div>
+</div>
+</body>
+</html>

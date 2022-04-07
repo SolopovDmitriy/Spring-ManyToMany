@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- See configuration in WebMvConfig.java -->
+<!--    <link href="@{/bootstrap/css/bootstrap.min.css}"-->
+<!--          rel="stylesheet" media="screen"/>-->
+
+</head>
+<body class="body_clients">
+
+<a href="/phones">PHONES</a>
+
+<h1 class="clients"> Clients </h1>
+<div>
+    <div class="table">
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Surname</th>
+                <th>Name</th>
+                <th>Patronymic</th>
+                <th>Birth date</th>
+                <th>Email</th>
+                <th>Gender</th>
+            </tr>
+            {{#clients}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{surname}}</td>
+                    <td>{{name}}</td>
+                    <td>{{patronymic}}</td>
+                    <td>{{birthDate}}</td>
+                    <td>{{email}}</td>
+<!--                    <td>{{#gender}}</td>-->
+                    <td>{{gender}}</td>
+<!--                    <td>{{/gender}}</td>-->
+                </tr>
+            {{/clients}}
+        </table>
+    </div>
+    <div class="form_for_entity">
+        <form method="post" action="add_client">
+            <input class = "input-form" type="text" placeholder="id" name="id">
+            <input class = "input-form" type="text" placeholder="surname" name="surname">
+            <input class = "input-form" type="text" placeholder="name" name="name">
+            <input class = "input-form" type="text" placeholder="patronymic" name="patronymic">
+            <input  class = "input-form" type="text" placeholder="dd.mm.yyyy" name="birthDate">
+            <input class = "input-form" type="text" placeholder="email" name="email">
+            <!--            <input type="text" placeholder="gender" name="gender">-->
+            <select class = "input-form" name="gender" id="gend">
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="OTHER">OTHER</option>
+            </select>
+            <input class = "input-form" type="submit" id="sub" value="ADD">
+        </form>
+    </div>
+</div>
+</body>
+</html>
